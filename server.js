@@ -6,6 +6,8 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/:id', function (req, res) {
+    console.log(req.params.id, "ID");
+
     const path = `assets/${req.params.id}.mp4`
     const stat = fs.statSync(path)
     const fileSize = stat.size
@@ -42,6 +44,6 @@ app.get('/:id', function (req, res) {
     }
 })
 
-app.listen(3000, function () {
-    console.log('Listening on port 3000!')
+app.listen(5000, function () {
+    console.log('Listening on port 5000!')
 })

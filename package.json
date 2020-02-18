@@ -10,8 +10,11 @@
   },
   "author": "Karthick Ragavendran",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
+  },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "nodemon": "^2.0.2"
+    "concurrently": "^5.1.0"
   }
 }
